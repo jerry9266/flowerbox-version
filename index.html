@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlowerBox Version Config</title>
+</head>
+<body>
+    <script>
+        // ==========================================
+        // FLOWERBOX REMOTE VERSION SETTINGS — EDIT HERE
+        // ==========================================
+        const FLOWERBOX_REMOTE_CONFIG = {
+            latestVersion: "1.0",
+            minimumVersion: "1.0",
+            
+            // PLACEHOLDER: Replace this placeholder string with your actual APK download URL (e.g. GitHub Releases URL or your server APK link)
+            updateUrl: "https://example.com/flowerbox-v1.0.apk",
+            
+            releaseNotes: "Performance improvements and bug fixes."
+        };
+
+        // Outputs raw JSON for the app to fetch securely
+        document.body.innerText = JSON.stringify(FLOWERBOX_REMOTE_CONFIG, null, 2);
+    </script>
+</body>
+</html>
